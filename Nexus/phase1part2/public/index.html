@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Restaurant Login & Signup</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="formTitle">Login</h2>
+        <form id="authForm">
+            <div class="form-item">
+                <span class="material-icons-outlined">account_circle</span>
+                <input type="text" name="user" id="user" placeholder="Email or Username">
+            </div>
+            <p class="error-message" id="userError">Please enter a valid email or username.</p>
+            <div class="form-item" id="passwordDiv">
+                <span class="material-icons-outlined">lock</span>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+            <p class="error-message" id="passError">Please enter a password.</p>
+            <div class="form-item" id="confirmPasswordDiv" style="display: none;">
+                <span class="material-icons-outlined">lock</span>
+                <input type="password" name="confirmPass" id="confirmPass" placeholder="Confirm Password">
+            </div>
+            <p class="error-message" id="confirmPassError">Passwords do not match.</p>
+            <button type="submit" id="submitButton">LOGIN</button>
+            <p id="switchText">New User? <a href="#" id="switchForm">Create an Account</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); /* slightly transparent background */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* adds a blur effect to the background */
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-item {
+    display: flex;
+    width: 100%;
+    background: transparent;
+    margin: 10px 0;
+    border-radius: 15px;
+    align-items: center;
+    border-bottom: 1px solid rgb(82, 81, 81);
+}
+
+.form-item:hover {
+    border: 1px solid rgb(82, 81, 81);
+}
+
+input {
+    background: transparent;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: auto;
+    color: white;
+    font-size: 17px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+span {
+    user-select: none;
+    margin: 5px;
+    color: rgb(172, 172, 172);
+    background: rgba(85, 81, 81, 0.637);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+button {
+    width: 60%;
+    padding: 5px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin: 10px auto;
+    border-radius: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px rgb(53, 52, 52);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 5px 2px rgba(63, 62, 62, 0.637);
+}
+
+button:hover {
+    color: black;
+    background: rgba(255, 255, 255, 0.637);
+    border: none;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.637), 0 0 10px rgba(255, 255, 255, 0.637);
+}
+
+#error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+}
